@@ -5,7 +5,7 @@
 
 
 
-    import {qData} from '../../store.js';
+    import {qData} from '../../../store.js';
 
     import {createEventDispatcher} from 'svelte';
 

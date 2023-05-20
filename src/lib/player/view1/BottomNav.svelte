@@ -1,6 +1,6 @@
 <script>
     //test
-    import {gData} from '../../store.js';
+    import {gData} from '../../../store.js';
 
 </script>
 

@@ -1,5 +1,5 @@
 <script>
-    import { gameData } from '../../../store.js';
+    import { gameData } from '../../../../store.js';
     import {tweened} from 'svelte/motion'
     import { blur } from 'svelte/transition';
     import { cubicOut } from 'svelte/easing';

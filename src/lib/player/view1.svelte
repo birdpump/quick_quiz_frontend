@@ -1,6 +1,6 @@
 <script>
     //veiw1 handles all game play elements for player users
-    import {gameData, gData, qData} from '../store.js';
+    import {gameData, gData, qData} from '../../store.js';
 
     import BottomNav from "./view1/BottomNav.svelte";
     import Question from './view1/Questions.svelte';

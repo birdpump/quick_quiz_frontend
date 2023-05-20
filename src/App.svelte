@@ -1,5 +1,5 @@
 <script>
-    import view1 from "./lib/view1.svelte";
+    import view1 from "./lib/player/view1.svelte";
 
     let selected = view1;
 

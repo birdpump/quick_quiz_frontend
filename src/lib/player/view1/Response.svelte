@@ -1,5 +1,5 @@
 <script>
-    import {qData} from '../../store.js';
+    import {qData} from '../../../store.js';
     import Wait from './response/Wait.svelte'
     import MainResult from './response/MainResult.svelte'
     import Test from "./response/Test.svelte";
