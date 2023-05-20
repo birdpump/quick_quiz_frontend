@@ -4,7 +4,8 @@
     import MainResult from './response/MainResult.svelte'
     import Test from "./response/Test.svelte";
 
-    let selected = Test;
+    import Result from "./response/Result.svelte";
+    let selected = Result;
     //test
 </script>
 
