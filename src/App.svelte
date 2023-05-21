@@ -47,6 +47,10 @@
         align-items: center;
     }
 
+    .join:hover{
+        background-color: black;
+    }
+
     .create {
         width: 200px;
         height: 200px;
@@ -59,15 +63,19 @@
 
     }
 
+    .create:hover{
+        background-color: black;
+    }
+
     .title {
         margin: 0 0 15px 0;
-        color: black;
-        font-family: sans-serif;
-        font-size: 46px;
+        color: white;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        font-size: 20vw;
     }
 
     .text {
-        color: black;
+        color: white;
         font-family: sans-serif;
         font-size: 24px;
     }

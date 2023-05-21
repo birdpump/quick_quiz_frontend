@@ -4,6 +4,8 @@
     import newJoin from "./player/newJoin.svelte";
     import Loading from "./player/Loading.svelte";
 
+    import Waiting from "./admin/Waiting.svelte";
+
     let selected = newJoin;
 
     function switchVeiw(event) {
