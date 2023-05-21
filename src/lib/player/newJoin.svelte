@@ -33,7 +33,7 @@
                 {#if check}
                     <input on:keydown={handleKeydown} bind:value={inputValue} placeholder="Game Pin" type="number">
                 {:else}
-                    <input on:keydown={handleKeydown} style="border: 3px red solid;" bind:value={inputValue} placeholder="Game Pin" type="number">
+                    <input on:keydown={handleKeydown} style="border: 3px red solid;" bind:value={inputValue} placeholder="Game Pin" type="text">
                 {/if}
                 {#if inputValue==null || inputValue==''}
                     <button on:click={handleSubmit} style="pointer-events: none;border: 3px #c3c3c3 solid;background-color: #c3c3c3;" id="enter" tabindex="-1">Enter</button>
