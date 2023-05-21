@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tests": "vite build; rm -rf ~/dev/trivia_AI_main/quick_quiz_backend/src/dist/*; cp -a dist/. ~/dev/trivia_AI_main/quick_quiz_backend/src/dist/"
   },
   "devDependencies": {
     "@smui/linear-progress": "^7.0.0-beta.3",
@@ -18,6 +19,7 @@
   },
   "dependencies": {
     "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1",
     "svelte-material-ui": "^7.0.0-beta.3"
   }
 }

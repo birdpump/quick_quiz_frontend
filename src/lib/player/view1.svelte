@@ -8,6 +8,9 @@
     import {onMount} from "svelte";
 
 
+    let selected = Question;
+
+
     //audio player
     let currentAudio = 'MainQuestionMusic.wav';
     let audio;
@@ -69,7 +72,7 @@
     gData.update(n => data);
 
 
-    let selected = Question;
+
 
     //more audio
     $: if (audio && audio.src !== currentAudio) {
