@@ -1,7 +1,7 @@
 <script>
     import {fly} from 'svelte/transition'
     import {onMount} from 'svelte';
-    export let check = false;
+    export let check = true;
 
     let errorVisible = false;
     let inputValue = '';
@@ -11,6 +11,8 @@
        } 
     })
     function handleSubmit(){
+        check = false;
+        errorVisible = true;
         if(inputValue!=null&&inputValue!=''){
             console.log(inputValue)
         }
