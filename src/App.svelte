@@ -1,16 +1,17 @@
 <script>
     import Player from "./lib/Player.svelte";
     import chatGPT from "./lib/admin/chatGPT.svelte";
+
     let selected;
 
     let visible = true;
 
-    function create(){
+    function create() {
         visible = false;
         selected = chatGPT;
     }
 
-    function join(){
+    function join() {
         visible = false;
         selected = Player
     }
@@ -28,14 +29,14 @@
         flex-direction: column;
     }
 
-    .subcont{
+    .subcont {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
     }
 
-    .join{
+    .join {
         width: 200px;
         height: 200px;
         background-color: green;
@@ -46,24 +47,26 @@
         align-items: center;
     }
 
-    .create{
+    .create {
         width: 200px;
         height: 200px;
         background-color: green;
         border-radius: 12px;
-        margin-left: 20px;display: flex;
+        margin-left: 20px;
+        display: flex;
         justify-content: center;
         align-items: center;
 
     }
-    .title{
-        margin: 0 0 15px 0 ;
+
+    .title {
+        margin: 0 0 15px 0;
         color: black;
         font-family: sans-serif;
         font-size: 46px;
     }
 
-    .text{
+    .text {
         color: black;
         font-family: sans-serif;
         font-size: 24px;
@@ -72,17 +75,17 @@
 </style>
 
 {#if visible}
-<div class="mainCont">
-    <div class="title">QuickQuiz</div>
-    <div class="subcont">
-        <div class="join" on:click={join}>
-            <div class="text">Join Game</div>
-        </div>
-        <div class="create" on:click={create}>
-            <div class="text">Create Game</div>
+    <div class="mainCont">
+        <div class="title">QuickQuiz</div>
+        <div class="subcont">
+            <div class="join" on:click={join}>
+                <div class="text">Join Game</div>
+            </div>
+            <div class="create" on:click={create}>
+                <div class="text">Create Game</div>
+            </div>
         </div>
     </div>
-</div>
 {/if}
 
 <svelte:component this={selected}/>

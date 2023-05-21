@@ -13,7 +13,5 @@
 </script>
 
 
-
-
 <svelte:component on:waiting={switchVeiw} this={selected}/>
 
