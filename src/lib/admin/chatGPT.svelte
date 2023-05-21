@@ -1,12 +1,20 @@
 <script>
+    import { createEventDispatcher } from 'svelte';
+
+    const dispatch = createEventDispatcher();
     export let topic = '';
+
+    function change(){
+        console.log("test")
+        dispatch('change');
+    }
 </script>
 
 <div id="parent">
     <div id="middle">
         <p id="title">Make a Quiz with Chat GPT!</p>
         <input bind:value={topic} id="topicInput" type="text" placeholder="Type any topic in here">
-        <button id="enter">Create Game</button>
+        <button id="enter" on:click={change}>Create Game</button>
     </div>
 </div>
 

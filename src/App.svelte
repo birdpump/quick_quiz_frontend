@@ -1,13 +1,13 @@
 <script>
     import Player from "./lib/Player.svelte";
-
+    import chatGPT from "./lib/admin/chatGPT.svelte";
     let selected;
 
     let visible = true;
 
     function create(){
         visible = false;
-        // selected = Create;
+        selected = chatGPT;
     }
 
     function join(){

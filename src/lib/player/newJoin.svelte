@@ -1,7 +1,7 @@
 <script>
     import {fly} from 'svelte/transition'
     import {onMount} from 'svelte';
-    export let check = true;
+    export let check = false;
 
     let errorVisible = false;
     let inputValue = '';
