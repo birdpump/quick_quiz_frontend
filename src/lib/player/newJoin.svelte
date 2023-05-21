@@ -31,7 +31,7 @@
             <header id="title">QuickQuiz</header>
             <div id="center">
                 {#if check}
-                    <input on:keydown={handleKeydown} bind:value={inputValue} placeholder="Game Pin" type="number">
+                    <input on:keydown={handleKeydown} bind:value={inputValue} placeholder="Game Pin" type="text">
                 {:else}
                     <input on:keydown={handleKeydown} style="border: 3px red solid;" bind:value={inputValue} placeholder="Game Pin" type="text">
                 {/if}
