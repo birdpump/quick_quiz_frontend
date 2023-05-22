@@ -21,7 +21,7 @@
 <div id="parent">
     <header id="topHeader">
         <p id="gameId">223566</p>
-        <img id="qrCode" src="/image/qrCode.png" alt="qr code">
+        <img id="qrCode" src="/qrCode.png" alt="qr code">
     </header>
     <header id="top2Header">
         <div></div>
@@ -38,16 +38,16 @@
         <p id="title2">QuickQuiz</p>
         <div></div>
         <div id="playerCount">
-            <img id="icon" src="/image/person.svg" alt="Player Count:">
+            <img id="icon" src="/person.png" alt="Player Count:">
             <p id="count">{playerCount}</p>
         </div>
         {#if musicOn}
             <button id="soundButton" on:click={handleSound}>
-                <img id="icon" src="/image/on.svg" alt="Player Count:">
+                <img id="icon" src="/on.svg" alt="Player Count:">
             </button>
         {:else}            
             <button id="soundButton" on:click={handleSound}>
-                <img id="icon" src="/image/off.svg" alt="Player Count:">
+                <img id="icon" src="/off.svg" alt="Player Count:">
             </button>
         {/if}
     </header>

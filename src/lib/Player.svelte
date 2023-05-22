@@ -6,7 +6,7 @@
 
     import Waiting from "./admin/Waiting.svelte";
 
-    let selected = newJoin;
+    let selected = Waiting;
 
     function switchVeiw(event) {
         selected = Loading;
