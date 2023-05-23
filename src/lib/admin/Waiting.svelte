@@ -240,7 +240,12 @@
             margin: auto;
         }
         #gameId{
-            font-size: 50px;
+            font-size: 40px;
+        }
+        #startButton{
+            padding: 8px;
+            padding-right: 16px;
+            padding-left: 16px;
         }
         .user{
             padding: 10px;
