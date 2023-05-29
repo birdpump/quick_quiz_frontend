@@ -5,6 +5,7 @@
     import Loading from "./player/Loading.svelte";
 
     import Waiting from "./admin/Waiting.svelte";
+    import FinalPodium from "./admin/FinalPodium.svelte";
 
     let selected = Waiting;
 

@@ -1,7 +1,7 @@
 <script>
     import { onMount, afterUpdate } from 'svelte';   
     //players in the game
-    export let users = ['wwwwwwwwwwwwwww','wwwwwwwwwwwwwww','wwwwwwwwwwwwwww','wwwwwwwwwwwwwww','wwwwwwwwwwwwwww','wwwwwwwwwwwwwww','wwwwwwwwwwwwwww'];
+    export let users = ['wwwwww','aefwwwww','wwwwwasdfwwwwwww','wwwwww','aefwwwww','wwwwwasdfwwwwwww','wwwwwwwwwwwwwww','wwwwasdw','wwwasdfwwwwwwwww'];
     //status of music on or off
     export let musicOn = true;
     //the game id to join the game
@@ -55,18 +55,12 @@
         {/if}
         <div id="iconParent">
             <div id="playerCount">
-                <img id="icon" src="/person.png" alt="Player Count:">
+                <img id="icon" src="/person.svg" alt="Player Count:">
                 <p id="count">{playerCount}</p>
-            </div>
-            {#if musicOn}
-                <button id="soundButton" on:click={handleSound}>
-                    <img id="icon" src="/on.svg" alt="Player Count:">
-                </button>
-            {:else}            
-                <button id="soundButton" on:click={handleSound}>
-                    <img id="icon" src="/off.svg" alt="Player Count:">
-                </button>
-            {/if}
+            </div>      
+            <button id="soundButton" on:click={handleSound}>
+                <img id="icon" src={musicOn ? "/on.svg" : "/off.svg"} alt="Player Count:">
+            </button>
 
         </div>
     </header>
@@ -159,42 +153,44 @@
         padding: 5px;
         padding-right: 10px;
         padding-left: 10px;
-        border: 5px #b63434 solid;
-        filter: drop-shadow(0 0 5px #b63434);
+        border: 5px #243a9c solid;
+        filter: drop-shadow(0 0 5px #243a9c);
         background-color: #414855;
         color: white;
         border-radius: 5px;
         
     }
     #startButton:hover{
-        filter: drop-shadow(0 0 10px #b63434);
+        filter: drop-shadow(0 0 10px #243a9c);
         cursor: pointer;
     }
     #startButton:active{
         cursor: auto;
     }
     #title{
-        background-color: white;
+        background-color: #414855;
+        color: white;
         padding: 5px;
         padding-right: 10px;
         padding-left: 10px;
         border-radius: 5px;
         font-size: 30px;
         margin-left: 3vw;
-        border: 3px #86249c solid;
-        filter: drop-shadow(0 0 8px #86249c);
+        border: 3px #243a9c solid;
+        filter: drop-shadow(0 0 8px #243a9c);
     }
     #playerCount{
         width: fit-content;
         height: fit-content;
-        background-color: white;
+        background-color: #414855;
+        color: white;
         display: flex;
         place-content: center;
         border-radius: 5px;
         padding-right: 8px;
         margin: 15px;
-        border: 3px #86249c solid;
-        filter: drop-shadow(0 0 5px #86249c);
+        border: 3px #243a9c solid;
+        filter: drop-shadow(0 0 5px #243a9c);
     }
     #icon{
         height: 42px;
@@ -208,23 +204,23 @@
     #soundButton{
         height: fit-content;
         width: fit-content;
-        background-color: white;
+        background-color: #414855;
         outline: none;
         border: none;
         border-radius: 5px;
         margin: auto;
         margin: 15px;
         margin-left: 0px;
-        border: 3px #86249c solid;
-        filter: drop-shadow(0 0 5px #86249c);
+        border: 3px #243a9c solid;
+        filter: drop-shadow(0 0 5px #243a9c);
     }
     #soundButton:hover{
         cursor: pointer;
-        filter: drop-shadow(0 0 10px #86249c);
+        filter: drop-shadow(0 0 10px #243a9c);
     }
     #soundButton:active{
-        cursor:auto;
-        filter: drop-shadow(0 0 8px #86249c);    
+        cursor:pointer;
+        filter: drop-shadow(0 0 8px #243a9c);    
     }
     #bottomHeader{
         display: flex;
