@@ -1,7 +1,7 @@
 <script>
     import { onMount, afterUpdate } from 'svelte';   
     //players in the game
-    export let users = ['wwwwww','aefwwwww','wwwwwasdfwwwwwww','wwwwww','aefwwwww','wwwwwasdfwwwwwww','wwwwwwwwwwwwwww','wwwwasdw','wwwasdfwwwwwwwww'];
+    export let users = ['wwwwww','aefwwwww','wwwwww','aefwwwww','wwwwww','aefwwwww','wwwwwasdfwwwwwww','wwwwww','aefwwwww','wwwwwasdfwwwwwww','wwwwwwwwwwwwwww','wwwwasdw','wwwasdfwwwwwwwww'];
     //status of music on or off
     export let musicOn = true;
     //the game id to join the game

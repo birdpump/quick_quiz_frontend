@@ -34,44 +34,47 @@
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        gap: 2rem;
     }
 
     .join {
-        width: 200px;
-        height: 200px;
+        padding: 2rem 4rem;
         background-color: green;
         border-radius: 12px;
         margin-right: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: rgb(94, 76, 223);
     }
 
     .join:hover{
-        background-color: black;
+        background-color: rgb(65, 52, 159) !important;
+        cursor: pointer;
     }
 
     .create {
-        width: 200px;
-        height: 200px;
-        background-color: green;
+        padding: 2rem 4rem;
+        background-color: rgb(94, 76, 223);
         border-radius: 12px;
         margin-left: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-
+        cursor: pointer;
     }
 
     .create:hover{
-        background-color: black;
+        background-color: rgb(65, 52, 159) !important;
+        cursor: pointer;
     }
 
     .title {
         margin: 0 0 15px 0;
         color: white;
         font-family: "Comic Sans MS", "Comic Sans", cursive;
-        font-size: 20vw;
+        font-size: 5rem;
+        padding-bottom: 5rem;
     }
 
     .text {

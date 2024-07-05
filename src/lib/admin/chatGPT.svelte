@@ -38,23 +38,21 @@
     #enter {
         height: fit-content;
         width: 410px;
+        border: none;
         margin-right: auto;
         margin-left:auto;
         margin-top: auto;
         margin-bottom: 30px;
         font-size: 30px;
-        padding-top: 5px;
-        padding-bottom: 7px;
-        background: #646cffaa;
-        border: 3px black solid;
-        filter: drop-shadow(0 0 4px black);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #545db3;
         border-radius: 5px;
         color: white;
     }
     #enter:hover{
         cursor: pointer;
-        filter: drop-shadow(0 0 6px black);
-        padding-bottom: 5px;
+        box-shadow: 0 0 5px 0px;
     }
     #parent {
         height: 100vh;
@@ -63,33 +61,34 @@
     }
 
     #title {
-        font-size: 40px;
-        color: black;
+        font-size: 50px;
+        color: white;
         text-align: center;
         margin: auto;
     }
 
     #middle {
         margin: auto;
-        height: 340px;
-        width: 500px;
-        background-color: white;
+        padding: 3rem;
+        border: 0.2rem white solid;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         border-radius: 10px;
         text-align: center;
+        gap: 3rem;
     }
 
     #topicInput {
         width: 400px;
         height: fit-content;
-        padding-top: 7px;
-        padding-bottom: 7px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         font-size: 25px;
         text-align: center;
         margin: auto;
-        border: 3px rgb(11, 0, 170) solid;
         border-radius: 5px;
-        background: #c9ccffaa;
+        border: 3px white solid;
+        background: #282c34;
+        color: white;
     }
 </style>
