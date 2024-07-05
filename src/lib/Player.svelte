@@ -7,10 +7,10 @@
     import Waiting from "./admin/Waiting.svelte";
     import FinalPodium from "./admin/FinalPodium.svelte";
 
-    let selected = Waiting;
+    let selected = newJoin;
 
     function switchVeiw(event) {
-        selected = Loading;
+        // selected = Loading;
     }
 
 </script>

@@ -43,12 +43,13 @@
         margin-left:auto;
         margin-top: auto;
         margin-bottom: 30px;
-        font-size: 30px;
+        font-size: 25px;
         padding-top: 10px;
         padding-bottom: 10px;
         background: #545db3;
         border-radius: 5px;
         color: white;
+        border: 0.1rem #545db3 solid;
     }
     #enter:hover{
         cursor: pointer;
@@ -75,7 +76,7 @@
         grid-template-rows: 1fr 1fr 1fr;
         border-radius: 10px;
         text-align: center;
-        gap: 3rem;
+        gap: 5rem;
     }
 
     #topicInput {
@@ -87,7 +88,7 @@
         text-align: center;
         margin: auto;
         border-radius: 5px;
-        border: 3px white solid;
+        border: 0.2rem white solid;
         background: #282c34;
         color: white;
     }
